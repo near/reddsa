@@ -32,7 +32,7 @@ rand_core = { version = "0.6", default-features = false }
 serde = { version = "1", optional = true, features = ["derive"] }
 thiserror = { version = "2.0", optional = true }
 # frost-rerandomized = { version = "2.2.0", optional = true, default-features = false, features = ["serialization"] }
-frost-rerandomized = { git = "https://github.com/ZcashFoundation/frost.git", rev = "3ed40ad6e2278578a718e7b6053ce10f1c763c93", optional = true, default-features = false, features = ["serialization"] }
+frost-rerandomized = { git = "https://github.com/ZcashFoundation/frost.git", rev = "a926bdee78024990ac98fe5211d2a9905d6b9fab", optional = true, default-features = false, features = ["serialization"] }
 
 [dependencies.zeroize]
 version = "1"
@@ -52,7 +52,7 @@ serde_json = "1.0"
 num-bigint = "0.4.6"
 num-traits = "0.2.19"
 # frost-rerandomized = { version = "2.2.0", features = ["test-impl"] }
-frost-rerandomized = { git = "https://github.com/ZcashFoundation/frost.git", rev = "3ed40ad6e2278578a718e7b6053ce10f1c763c93", features = ["test-impl"] }
+frost-rerandomized = { git = "https://github.com/ZcashFoundation/frost.git", rev = "a926bdee78024990ac98fe5211d2a9905d6b9fab", features = ["test-impl"] }
 
 # `alloc` is only used in test code
 [dev-dependencies.pasta_curves]

@@ -351,8 +351,7 @@ pub mod keys {
                         (*i, vs)
                     })
                     .collect();
-                // TODO: change new() to allow None and remove unwrap()
-                PublicKeyPackage::new(verifying_shares, verifying_key, self.min_signers().unwrap())
+                PublicKeyPackage::new(verifying_shares, verifying_key, self.min_signers())
             } else {
                 self
             }
